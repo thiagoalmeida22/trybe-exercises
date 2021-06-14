@@ -1,0 +1,1 @@
+A trybe é uma escola de programação com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, soft skills, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
