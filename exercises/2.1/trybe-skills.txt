@@ -4,3 +4,5 @@
 - Bash
 - Git
 - Trabalho
+- HTML
+- CSS
