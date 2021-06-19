@@ -1,0 +1,58 @@
+.corPrimaria:hover{
+    border-width: 3px;
+    border-style: solid;
+    border-color: green;
+}
+
+.textoPrimaria{
+    text-align: center;
+    text-decoration: underline;
+    color: green;
+    font-style: italic;
+}
+
+.corSecundaria:hover{
+    border-width: 3px;
+    border-style: solid;
+    border-color:purple
+}
+
+.textoSecundaria{
+    text-decoration: underline;
+    color: purple;
+}
+
+.corComplementar:hover{
+    border-width: 3px;
+    border-style: solid;
+    border-color: teal;
+}
+
+.textoComplementar{
+    word-spacing: 20px;
+    letter-spacing: 3px;
+    color: teal;
+    font-style: italic;
+}
+
+.corEscura:hover{
+    border-width: 3px;
+    border-style: solid;
+    border-color: black
+}
+
+.textoEscura{
+    color: black;
+}
+
+.corClara:hover{
+    border-width: 3px;
+    border-style: solid;
+    border-color: powderblue
+}
+
+.textoClara{
+    text-decoration: purple;
+    text-decoration: overline;
+    font-style: italic;
+}

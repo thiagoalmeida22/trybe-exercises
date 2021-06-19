@@ -1,0 +1,62 @@
+li {
+    font-size: 20px;
+}
+
+li em{
+    font-weight: bold;
+}
+
+ol li {
+    background-color: yellow;
+}
+
+ol li.par {
+    color: green;
+}
+
+ol li.impar{
+    text-transform: uppercase;
+}
+
+h1,h2,h3,h4 {
+    color: red;
+}
+
+h1 em,h2 em,h3 em,h4 em{
+    size: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.tresPrimeiras{
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+.hover:hover {
+    font-weight: bold;
+}
+
+.stackover:hover{
+    color: #242729;
+}
+
+.w3s:hover{
+    color: #000000;
+}
+
+.mdn:hover{
+    color: #212121;
+}
+
+.dev:hover{
+    color: #333333;
+}
+
+.trybe:hover{
+    color: #3D495C;
+}
