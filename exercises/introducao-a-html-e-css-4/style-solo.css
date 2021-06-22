@@ -1,0 +1,50 @@
+h1,h3 {
+    text-align: center;
+  }
+
+  .limite{
+    height: 450px;
+    width: 675px;
+  }
+  .first {
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .second {
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+  }
+
+  .third {
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+  }
+
+  .list {
+      list-style-type: none;
+  }
+
+  .premios-container{
+      display: inline;
+  }
+
+  .footer{
+    padding-top: .25rem;
+    font-family: Verdana, Arial, "Helvetica Neue", Helvetica,sans-serif;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
