@@ -44,3 +44,18 @@ document.getElementById('primeiroFilhoDoFilho').appendChild(childDiv2);
 //4
 document.getElementById('primeiroFilhoDoFilho').children[0].parentNode.parentNode.parentNode.children[2];
 // Chego no div de ID terceiroFilho
+
+// Parte 3
+let paiDoPai = document.getElementById('paiDoPai');
+let remove = [];
+remove[0] = document.getElementById('primeiroFilho');
+remove[1] = document.getElementById('terceiroFilho');
+remove[2] = document.getElementById('quartoEUltimoFilho');
+paiDoPai.firstElementChild.removeChild(remove[0]);
+paiDoPai.firstElementChild.removeChild(remove[1]);
+paiDoPai.firstElementChild.removeChild(remove[2]);
+remove[3] = document.getElementById('elementoOndeVoceEsta').children[1];
+remove[4] = document.getElementById('elementoOndeVoceEsta').children[2];
+document.getElementById('elementoOndeVoceEsta').removeChild(remove[3]);
+document.getElementById('elementoOndeVoceEsta').removeChild(remove[4]);
+
