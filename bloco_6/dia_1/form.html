@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="full-name">Nome:</label>
+            <input type="text" id='full-name' name='full-name' placeholder="Digite seu nome.." required/>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required/>
+            <label for="cpf">CPF:</label>
+            <input type="text" name="cpf" id="cpf" required>
+            <label for="endereço">Endereço:</label>
+            <input type="text" name="endereço" id="endereço" required>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" required>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+
+            </select>
+            <input type="radio" name="moradia" id="casa" value="Casa" checked required>
+            <label for="moradia">Casa</label>
+            <input type="radio" name="moradia" id="apartamento" value="Apartamento" required>
+            <label for="moradia">Apartamento</label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados do último emprego</legend>
+            <label for="resumo">Resumo</label>
+            <textarea name="resumo" id="resumo" cols="150" rows="5" placeholder="Digite um resumo do seu curriculo aqui..."></textarea>
+        </fieldset>
+    </form>
+</body>
+</html>
