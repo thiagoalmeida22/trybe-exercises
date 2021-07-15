@@ -119,34 +119,17 @@ myTasks.addEventListener('click', function(event){
     }
 });
 
-//10
-// daysFather.addEventListener('click', function(event){
-//     let taskSelected = document.getElementsByClassName('task selected');
-//     if (taskSelected.length > 0) {
-//         let selectedColor = taskSelected[0].style.backgroundColor;
-//     }
-//     if (event.target.style.color === selectedColor) {
-//         event.target.style.color = 'rgb(119,119,119)';
-//     } else if ((event.target.style !== selectedColor) && (taskSelected.length > 0)) {
-//         event.target.style.color = selectedColor;
-//     }
-// });
-
-function setDayColor() {
-    let selectedTask = document.getElementsByClassName('task selected');
-    let days = document.querySelector('#days');
-    let taskDiv = document.querySelector('.task');
-    let taskColor = taskDiv.style.backgroundColor;
-    
-    days.addEventListener('click', function(event){
-      let eventTargetColor = event.target.style.color;
-      if (selectedTask.length > 0 && eventTargetColor !== taskColor) {
-        let color = selectedTask[0].style.backgroundColor;
-        event.target.style.color = color;
-      } else if (eventTargetColor === taskColor && selectedTask.length !== 0) {
+10
+daysFather.addEventListener('click', function(event){
+    let taskSelected = document.getElementsByClassName('task selected');
+    if (taskSelected.length > 0) {
+        let selectedColor = taskSelected[0].style.backgroundColor;
+    }
+    if (event.target.style.color === selectedColor) {
         event.target.style.color = 'rgb(119,119,119)';
-      }
-    });
-  };
-  
-  setDayColor();
+    } else if ((event.target.style !== selectedColor) && (taskSelected.length > 0)) {
+        event.target.style.color = selectedColor;
+    }
+});
+
+
