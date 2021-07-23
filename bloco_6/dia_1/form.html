@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <title>Document</title>
 </head>
 <body>
@@ -39,10 +40,13 @@
             <label for="descricao">Descrição:</label>
             <textarea name="descricao" id="descricao" cols="150" rows="5" placeholder="Descreva seu cargo brevemente aqui..." maxlength="500" required></textarea>
             <label for="date">Data de Início:</label>
-            <input type="date" name="date" id="date" required>
+            <!-- <input type="date" name="date" id="date" required> -->
+            <input type="text" id="datepicker">
         </fieldset>
         <button id='enviar' type="submit">Enviar</button>
         <button id='limpar' type="reset">Limpar</button>
+        <script src="node_modules/moment/moment.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
         <script src="script.js"></script>
     </form>
 </body>

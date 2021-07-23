@@ -8,7 +8,14 @@ const estado = document.getElementById('estado');
 const resumo = document.getElementById('resumo');
 const cargo = document.getElementById('cargo');
 const descricao = document.getElementById('descricao');
-const date = document.getElementById('date');
+const  date = document.getElementById('datepicker');
+var picker = new Pikaday({
+   field: date,
+   format: 'DD/MM/YYYY',
+   minDate: moment().subtract(80, 'years').toDate(),
+   maxDate: moment().toDate(),
+   yearRange: [moment().subtract(80, 'years').year(), moment().year()],
+  });
 
 const body = document.getElementsByTagName('body')[0];
 const succesDiv = document.createElement('div');
@@ -51,6 +58,9 @@ function estadosFill() {
   }
 }
 
+console.log(moment().subtract(80, 'years').toDate());
+console.log(moment());
+console.log(moment().year())
 function validateNome (currentBoolean) {
   if (!nomeCompleto.value.length || nomeCompleto.value.length > 40) {
     const text = document.createElement('p');
