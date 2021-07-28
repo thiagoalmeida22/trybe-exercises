@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form action="" method="get">
         <fieldset>
             <legend>Dados pessoais</legend>
             <label for="full-name">Nome:</label>
-            <input type="text" id='full-name' name='full-name' placeholder="Digite seu nome.." required/>
+            <input type="text" id='full-name' name='full-name' placeholder="Digite seu nome.." maxlength="40" required/>
             <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" required/>
+            <input type="email" name="email" id="email" maxlength="50" required/>
             <label for="cpf">CPF:</label>
-            <input type="text" name="cpf" id="cpf" required>
-            <label for="endereço">Endereço:</label>
-            <input type="text" name="endereço" id="endereço" required>
+            <input type="text" name="cpf" id="cpf" maxlength="11" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" name="endereco" id="endereco" maxlength="200" required>
             <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" id="cidade" required>
+            <input type="text" name="cidade" id="cidade" maxlength="28" required>
             <label for="estado">Estado:</label>
             <select name="estado" id="estado">
-
+                <option disabled selected value>Selecione seu estado</option>
+                <!-- Javascript adicionar options -->
             </select>
             <input type="radio" name="moradia" id="casa" value="Casa" checked required>
             <label for="moradia">Casa</label>
@@ -31,9 +33,21 @@
         </fieldset>
         <fieldset>
             <legend>Dados do último emprego</legend>
-            <label for="resumo">Resumo</label>
-            <textarea name="resumo" id="resumo" cols="150" rows="5" placeholder="Digite um resumo do seu curriculo aqui..."></textarea>
+            <label for="resumo">Resumo:</label>
+            <textarea name="resumo" id="resumo" cols="150" rows="5" placeholder="Digite um resumo do seu curriculo aqui..." maxlength="1000" required></textarea>
+            <label for="cargo">Cargo:</label>
+            <input type="text" name="cargo" id="cargo" maxlength="40" required>
+            <label for="descricao">Descrição:</label>
+            <textarea name="descricao" id="descricao" cols="150" rows="5" placeholder="Descreva seu cargo brevemente aqui..." maxlength="500" required></textarea>
+            <label for="date">Data de Início:</label>
+            <!-- <input type="date" name="date" id="date" required> -->
+            <input type="text" id="datepicker">
         </fieldset>
+        <button id='enviar' type="submit">Enviar</button>
+        <button id='limpar' type="reset">Limpar</button>
+        <script src="node_modules/moment/moment.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+        <script src="script.js"></script>
     </form>
 </body>
 </html>
